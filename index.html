@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XSound - Fones Personalizáveis e Ecológicos</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">XSound</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#produtos" class="nav-link">Produtos</a></li>
+                <li><a href="#personalizacao" class="nav-link">Personalização</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1>Revolucione sua experiência sonora</h1>
+            <p>Fones de ouvido sustentáveis com tecnologia de IA e personalização única</p>
+            <a href="#produtos" class="btn-primary">Descobrir Agora</a>
+        </div>
+    </section>
+
+    <section id="produtos" class="features-section">
+        <div class="container">
+            <h2>Nossos Diferenciais</h2>
+            <div class="grid">
+                <div class="feature-item">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Materiais Biodegradáveis</h3>
+                    <p>Design sustentável com materiais eco-friendly</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-sliders-h"></i>
+                    <h3>Controle de Som Avançado</h3>
+                    <p>Ajuste preciso do áudio com botões dedicados</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-brain"></i>
+                    <h3>Inteligência Artificial</h3>
+                    <p>IA integrada para otimização do som</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="personalizacao" class="customization-panel">
+        <div class="container">
+            <h2>Crie Seu Fone Único</h2>
+            <div class="product-showcase">
+                <div class="product-card">
+                    <div class="customization-options">
+                        <h3>Personalização</h3>
+                        <div class="color-section">
+                            <h4>Escolha as Cores</h4>
+                            <div class="color-options">
+                                <button class="color-btn" data-color="#ff0000" style="background-color: #ff0000;"></button>
+                                <button class="color-btn" data-color="#000000" style="background-color: #000000;"></button>
+                                <button class="color-btn" data-color="#ffffff" style="background-color: #ffffff;"></button>
+                                <button class="color-btn" data-color="#4a90e2" style="background-color: #4a90e2;"></button>
+                                <button class="color-btn" data-color="#50c878" style="background-color: #50c878;"></button>
+                                <button class="color-btn" data-color="#9b59b6" style="background-color: #9b59b6;"></button>
+                            </div>
+                            
+                            <div class="gradient-options">
+                                <h4>Crie seu Degradê Personalizado</h4>
+                                <div class="gradient-picker">
+                                    <div class="gradient-input">
+                                        <label>Cor 1:</label>
+                                        <input type="color" id="gradient-color-1" value="#ff0000">
+                                    </div>
+                                    <div class="gradient-input">
+                                        <label>Cor 2:</label>
+                                        <input type="color" id="gradient-color-2" value="#000000">
+                                    </div>
+                                </div>
+                                <button class="gradient-btn" id="apply-gradient">Aplicar Degradê</button>
+                            </div>
+                        </div>
+
+                        <div class="feature-toggles">
+                            <label>
+                                <input type="checkbox" id="ai-toggle" checked> IA Assistente (+R$50)
+                            </label>
+                            <label>
+                                <input type="checkbox" id="sound-toggle" checked> Controle de Som Premium (+R$15)
+                            </label>
+                        </div>
+
+                        <div class="price-section">
+                            <p class="original-price">De: R$ 200,00</p>
+                            <p class="final-price">Por: R$ <span id="current-price">200,00</span></p>
+                            <button class="btn-buy">
+                                <i class="fas fa-shopping-cart"></i>
+                                Comprar Agora
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="features-section">
+        <div class="container">
+            <h2>Sobre a XSound</h2>
+            <p>Somos pioneiros em áudio sustentável e personalizado, combinando tecnologia de ponta com responsabilidade ambiental.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 XSound. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./js/custom-interface.js"></script>
+    <script src="./js/ai-features.js"></script>
+    <script src="./js/audio-controls.js"></script>
+    <script src="./js/personalization.js"></script>
+</body>
+</html>
